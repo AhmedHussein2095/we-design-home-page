@@ -1,0 +1,957 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    
+    margin: 0;
+    padding: 0;
+} */
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+}
+
+/* ----------------------------------------------------------------------------  header  -------------------------------------------------------------------------------- */
+
+
+
+header{
+    border: 1px solid #000;
+    /* background-color: #000; */
+    text-align: center;
+    height: 610px;
+
+    background-image:url('../photos/header11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.headings{
+    
+    /* border: 1px solid #080; */
+    
+    margin: 240px 0;
+    height: auto;
+}
+
+.headings h1 {
+    text-transform: uppercase;
+    color: #fff;
+    /* border-top: 1px solid #fff; */
+    /* border: 1px solid #fff; */
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+    padding: 5px 0;
+    width: 600px;
+    display: inline-block;  /* for width to set it in center */
+
+    font: bold 43px Arial, Helvetica, sans-serif;
+    /* white-space: nowrap; */
+
+}
+
+.headings h1:hover{
+    text-shadow: 1px 2px 6px #2ecc71;
+    transition: ease .3s;
+}
+
+.headings h4{
+    border: 1px solid #fff;
+    color: #fff;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica, sans-serif ;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px 24px;
+   
+}
+
+.headings h4 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.headings h4:hover{
+    border: 1px solid #2ecc71;;
+    transition: ease .3s;
+}
+
+
+/*------------------------------------------------------------------------------  navbar ----------------------------------------------------------------------------------*/
+
+
+
+
+nav{
+    
+    background-color: #252F31;
+    color: #fffeff;
+    height: fit-content;
+
+    
+    
+}
+
+nav .container{
+    /* border: 1px solid #fff; */
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+
+nav p{
+    /* border: 1px solid #080; */
+    float: left;
+    text-transform: uppercase;
+    font: bold 18px Arial, Helvetica, sans-serif ;
+    padding: 12px 0;
+    margin-left: 17px;
+    word-spacing: 20px;
+}
+
+nav p span{
+    color: #2ecc71;
+}
+
+nav p:first-letter{
+    /* border: 1px solid #080; */
+    background-color: #666;
+    padding: 3px 8px;
+    margin-right: 15px;
+}
+
+
+
+/*  -----------------ul stylying--------------  */
+
+nav ul{
+    /* border: 1px solid #fff; */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* text-align: right; */
+    float: right;
+    margin: 0 35px 0 0;
+
+}
+
+nav ul li {
+    /* border: 1px solid #fff; */
+    display: inline-block;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica, sans-serif ;
+    padding: 17px 14px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* nav ul li a.home{
+    color:#2ecc71;
+    font-size: 16px;
+
+} */
+
+nav ul li a:hover{
+    /* border: 1px solid #fff; */
+    color:#2ecc71;
+    font-weight: bold;
+    transition: ease .25s;
+    
+}
+
+
+/* ---------------------------------------------------------------  aside  ------------------------------------------------------------------------------------------- */
+
+aside{
+    background-color: #fff;
+}
+
+aside .container{
+    /* border: 1px solid #000; */
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: auto;
+}
+
+aside .container div{
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 80px 80px 80px 80px;
+    /* border-radius:  50% 50% 50% 50%; */
+    padding: 30px;
+    margin: 40px 20px;
+}
+
+aside .container div:first-child{
+    text-align: left;
+    /* flex-shrink: 1; */
+    /* flex-grow: 0; */
+    /* border-radius: 50% 50% 0 50%; */
+    border-radius: 0px 80px 80px 0px;
+    
+}
+aside .container div:last-child{
+    text-align: right;
+    /* border-radius:  50% 50% 50% 0; */
+    border-radius: 80px 0px 0px 80px;
+
+}
+
+
+aside .container div h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font:600 20px Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+    color: #566665;
+    
+}
+
+aside .container div p {
+    color: #888;
+    font: 400 12px Arial, Helvetica, sans-serif;
+    /* text-align: justify;   */
+    line-height: 18px;
+    
+}
+
+/*  ------------------------------------------------------------------  about me  ----------------------------------------------------------------------------------------- */
+
+.aboutMe{
+    background-color: #f4f4f4;
+
+}
+.aboutMe .container{
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.left img {
+    margin: 0;
+    padding: 0;
+    width: 460px;
+    height: 500px;
+}
+
+.right{
+    /* border: 1px solid #000; */
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.right .rightUp{
+    margin-top: 40px ;
+    margin-bottom: 60px;
+    /* border: 1px solid #000; */
+}
+
+.right .rightUp h3{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -.5px;
+    margin: 25px 0;
+    color: #566665;
+
+}
+
+.right .rightUp > p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    /* margin: 20px 0; */
+    /* width: 78%; */
+    text-align: justify;
+    font: 400 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 18px;
+    color: #888;
+}
+
+.right .rightUp p:last-of-type{
+    margin-top: 20px;
+}
+
+
+
+
+.right .rightDown {
+    overflow: hidden;
+    /* border: 1px solid #000; */
+    
+}
+
+.right .rightDown div {
+    /* box-sizing: border-box; */
+    /* border: 1px solid #000; */
+    float: left;
+    width: 40%;
+    margin: 0 40px 35px 0;
+    /* margin-bottom: 35px; */
+    position: relative;
+}
+.right .rightDown div.two,.right .rightDown div.four{
+    margin-right: 0px;
+}
+
+.right .rightDown div img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    
+}
+
+.right .rightDown div h3,.right .rightDown div p{
+    padding-left: 45px;
+}
+
+
+
+.right .rightDown div h3{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: -.5px;
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: #566665;
+}
+
+.right .rightDown div p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    /* width: 100%; */
+    /* text-align: justify; */
+    
+    font: 400 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 18px;
+    color: #888;
+}
+
+
+/*  -----------------------------------------------------------------------------  skills  --------------------------------------------------------------------------- */
+
+.skills{
+    background-color: #fff;
+}
+.skills .container{
+    /* border: 1px solid #000; */
+    width: 80%;
+    margin:0 auto;
+    overflow: hidden;
+    
+    
+}
+
+.skills .mySkills,.skills .infograph{
+    /* border: 1px solid #000; */
+    float: left;
+    width: 40%;
+    
+    
+}
+
+.mySkills{
+    margin-top: 40px ;
+}
+
+.mySkills h3{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -.5px;
+    margin: 25px 0;
+    color: #566665;
+
+}
+
+.mySkills > p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    /* margin: 20px 0; */
+    /* width: 78%; */
+    text-align: justify;
+    font: 400 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 18px;
+    color: #888;
+}
+
+.mySkills p:last-of-type{
+    margin-top: 20px;
+}
+
+
+
+.mySkills h4{
+    border: 1px solid #2ecc71;
+    color: #2ecc71;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font: 700 12px Arial, Helvetica, sans-serif ;
+    width: fit-content;
+    margin-top: 30px;
+    padding: 10px 24px;
+   
+}
+
+.mySkills h4 a {
+    color: #2ecc71;
+    text-decoration: none;
+}
+
+.mySkills h4:hover{
+    border: 2px solid #2ecc71;;
+    font: 900 12px Arial, Helvetica, sans-serif;
+    transition: ease .3s;
+}
+
+.infograph{
+    margin-left: 11%;
+}
+
+.infograph .cont{
+margin-top: 80px;
+}
+
+.infograph .info1 {
+    /* border: 1px solid #000; */
+    margin-bottom: 30px;
+}
+
+.infograph .info1 p{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font: 500 16px Arial, Helvetica, sans-serif;
+    
+}
+
+.infograph .info1 div{
+    background-color: #e4e4e4;
+    width: 350px;
+    height: 20px;
+    
+}
+
+.infograph .info1 div span{
+    background-color: #2ecc71;
+    display: inline-block;
+    height: 20px;
+    font: 500 14px Arial, Helvetica, sans-serif;
+    text-align: right;
+    color: #fff;
+    
+}
+
+
+/*  -----------------------------------------------------------------------------  resume  --------------------------------------------------------------------------- */
+
+.resume{
+    background-color: #f4f4f4;
+
+}
+.resume .container{
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.resume .container h3{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #566665;
+    margin: 70px 0 40px 0;
+
+}
+
+.resume .container > p {
+    font: 400 12px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #888;
+}
+
+.resume .container p:last-of-type{
+    margin-top: 10px;
+}
+
+
+
+.resume .container h4{
+    border: 1px solid #2ecc71;
+    color: #2ecc71;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font: 700 12px Arial, Helvetica, sans-serif ;
+    width: fit-content;
+    margin: auto;
+    margin: 40px auto 70px auto;
+    padding: 10px 24px;
+   
+}
+
+.resume .container h4 a {
+    color: #2ecc71;
+    text-decoration: none;
+}
+
+.resume .container h4:hover{
+    border: 2px solid #2ecc71;;
+    font: 900 12px Arial, Helvetica, sans-serif;
+    transition: ease .3s;
+}
+
+
+
+/*  -----------------------------------------------------------------------------  testimonials  --------------------------------------------------------------------------- */
+
+.testimonials{
+    background-color: #fff;
+}
+
+.testimonials .container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonials .container .education {
+    border-bottom: 1px solid #bbb;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+
+
+.testimonials .container .education .left{
+    /* border: 1px solid #000; */
+    width: 50%;
+}
+
+.testimonials .container .education .right{
+    /* border: 1px solid #000; */
+    width: 50%;
+}
+
+.testimonials .education .left h3{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 01px;
+    margin: 65px 0 25px 0;
+    color: #566665;
+
+}
+
+.testimonials .education .left > p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    /* margin: 20px 0; */
+    /* width: 78%; */
+    text-align: justify;
+    font: 400 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 20px;
+    color: #888;
+}
+
+.testimonials .education .left p:last-of-type{
+    margin-top: 25px;
+}
+
+
+.testimonials .container .education .right{
+    /* border: 1px solid #888; */
+    margin-top: 110px;
+    
+}
+
+.testimonials .container .education .right div:last-of-type{
+    margin-bottom: 60px;
+}
+
+.testimonials .container .education .right .rightSecond{
+    margin-top: 60px;
+    
+}
+
+.testimonials .container .education .right .rightFirst h4,
+.testimonials .container .education .right .rightSecond h4{
+    
+    color: #566665;
+    text-transform: uppercase;
+    font: bold 15px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.testimonials .container .education .right .rightFirst p.college,
+.testimonials .container .education .right .rightSecond p.college{
+    color: #566665;
+    text-transform: capitalize;
+    font: 500 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: 10px;
+    width: 80%;
+
+    
+
+}
+
+.testimonials .container .education .right .rightFirst span,
+.testimonials .container .education .right .rightSecond span{
+    color: #fff;
+    background-color: #2ecc71;
+    text-transform: uppercase;
+    display: inline-block;
+    font: 400 12px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 3px 5px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.testimonials .container .education .right .rightFirst p.certification,
+.testimonials .container .education .right .rightSecond p.certification{
+    border-top: 1px solid #bbb ;
+    text-align: justify;
+    font: 400 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 20px;
+    color: #888;
+    padding-top: 15px ;
+    width: 80%;
+}
+
+
+
+.testimonials .container .baseTwo {
+    border-bottom: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+
+/*  -----------------------------------------------------------------------------  quote  --------------------------------------------------------------------------- */
+
+.quote{
+    background-color: #f4f4f4;
+}
+
+.quote .container{
+    width: 80%;
+    margin:  auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.quote blockquote{
+    margin: 80px 0 30px 0;
+    font: italic 400 16px/26px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #888;
+}
+
+.quote h3{
+    font: bold 16px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #566665;
+    margin-bottom: 17px;
+}
+
+.quote ul{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.quote ul li {
+    display: inline-block;
+    border: 1px solid #2ecc71;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    margin: 01px;
+}
+
+.quote ul li.selected { 
+    background-color: #2ecc71;
+}
+
+.quote ul li:hover {
+    background-color: #2ecc71;
+
+}
+
+
+/*  -----------------------------------------------------------------------------  portofolio  --------------------------------------------------------------------------- */
+
+.portofolio{
+    background-color: #fff;
+}
+
+.portofolio .container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.portofolio h3 {
+    font: 600 20px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #566665;
+    margin: 70px 0 40px 0;
+}
+
+.portofolio p {
+    font: 400 14px/24px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #888;
+}
+
+.portofolio .projects{
+    /* border: 1px solid #2ecc71; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(295, auto);
+    grid-gap: 35px;
+    margin: 50px 0 80px 0;
+}
+
+
+
+.portofolio .projects div img {
+    width: 100%;
+    height: 250px;
+
+    box-shadow: 4px 4px 6px 1px #566665, -4px -4px 6px 1px #566665;
+    -webkit-box-shadow: 4px 4px 6px 1px #566665, -4px -4px 6px 1px #566665;
+    -moz-box-shadow: 4px 4px 6px 1px #566665, -4px -4px 6px 1px #566665;
+    -o-box-shadow: 4px 4px 6px 1px #566665, -4px -4px 6px 1px #566665;
+    -ms-box-shadow: 4px 4px 6px 1px #566665, -4px -4px 6px 1px #566665;
+
+    padding: 1px;
+    border: 2px solid #bbb;
+}
+
+/*  -----------------------------------------------------------------------------  contact  --------------------------------------------------------------------------- */
+
+.contactMe{
+    background-color: #252F31;
+}
+
+.contactMe .container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    'info info info info form form form form'
+    'foot foot foot foot foot foot foot foot'
+    ;
+}
+
+.info{
+    grid-area: info;
+    /* border: 1px solid #2ecc71; */
+    height: auto;
+}
+
+.form{
+    grid-area: form;
+    /* border: 1px solid #2ecc71; */
+    height: auto;
+    
+}
+
+.footer{
+    grid-area: foot;
+    /* border: 1px solid #2ecc71; */
+    height: auto;
+    
+}
+
+
+/* -------  info style --------*/
+.info h3 {
+    color: #ccc;
+    text-transform: uppercase;
+    font: bold 24px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 80px 0 30px 0;
+
+}
+
+.info p{
+    width: 80%;
+    /* text-align: justify; */
+    font: bold 14px/22px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: 25px;
+    color: #666;
+}
+.info span{
+    display: block;
+    font: bold 14px/22px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #666;
+    margin: 3px 0;
+}
+
+.info .callDiv{
+    margin-top: 30px;
+}
+
+.info span.call {
+    display: inline-block;
+    color: #ccc;
+    margin: -3px 0;
+    font: 500 14px/22px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* -------  form style --------*/
+
+.form *{
+    display: block;
+    margin-left: 20px;
+}
+
+.form label:first-child{
+    margin-top: 80px;
+}
+
+.form label{
+    font: 500 16px/22px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #ccc;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+}
+
+.form input{
+    width: 483px;
+    height: 35px;
+    background-color: #4B5557;
+    margin-bottom: 35px;
+    border: none;
+    color: #fff;
+}
+
+.form textarea{
+    background-color: #4B5557;
+    margin-bottom: 45px;
+    border: none;
+    color: #fff;
+    resize: none;
+}
+
+.form h4{
+    background-color: #191E22;
+    text-transform: uppercase;
+    font: bold 14px Arial, Helvetica, sans-serif ;
+    width: fit-content;
+    padding: 15px 30px;
+    margin-bottom: 85px;
+}
+
+.form h4 a{
+    text-decoration: none;
+    color: #ccc;
+    padding: 0;
+    margin: 0;
+}
+
+.form h4:hover,.form h4:active{
+   border: 1px solid #ccc;
+}
+
+
+/* -------  footer style --------*/
+.footer {
+    text-align: center;
+    background-color: #191E22;
+}
+
+.footer p {
+    margin: 25px 0 15px 0;
+    text-transform: uppercase;
+    font: bold 12px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #666;
+    letter-spacing: -.25px;
+    word-spacing: 8px;
+
+}
+
+.footer ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.footer ul li{
+    display: inline-block;
+    margin: 0 3px;
+    background-color: #4B5557;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    
+}
+
+.footer ul li a {
+    color: #191E22;
+    padding-top: 2px;
+    line-height: 30px;
+    
+}
+
+.footer ul li a:hover i {
+    color: #3498db;
+   
+    transform: scale(1.25);
+    transition: ease .2s;
+}
+
+.footer ul li a:hover li {
+    border: 1px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
